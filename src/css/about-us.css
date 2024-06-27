@@ -1,34 +1,6 @@
-body {
-    margin: 0;
-}
-
-@media (min-width: 320px) and (max-width: 375px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-        min-width: 280px;
-        max-width: 335px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px;
-        width: 704px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        padding-left: 65px;
-        padding-right: 65px;
-        width: 1150px;
-    }
-}
-
 /* My section CSS */
-.about-us-section {}
+.about-us-section {
+}
 
 .about-us-container {
     display: flex;
@@ -80,9 +52,8 @@ body {
 
 .about-us-second-div {
     border-radius: 30px;
-    min-width: 280px;
-    height: 446px;
     background-color: rgba(12, 12, 12, 0.2);
+    overflow: hidden;
 }
 
 .about-us-picture {}
@@ -113,7 +84,7 @@ body {
     }
 
     .about-us-second-div {
-        height: 512px;
+        border-radius: 50px;
     }
 }
 
@@ -123,9 +94,7 @@ body {
     }
 
     .about-us-first-div {
-        box-sizing: border-box;
         width: 580px;
-        height: 532px;
     }
 
     .about-us-btn {
@@ -133,8 +102,6 @@ body {
     }
 
     .about-us-second-div {
-        box-sizing: border-box;
-        height: 532px;
         width: 530px;
     }
 
