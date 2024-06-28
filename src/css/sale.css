@@ -1,3 +1,7 @@
+.sale-container {
+    flex-direction: column;
+}
+
 .sale-title {
     font-weight: 600;
     font-size: 32px;
@@ -14,19 +18,15 @@
 }
 
 .sale-item {
-    border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 16px;
     background-color: #f3f3f3;
     padding: 13px 14px;
-    width: 52px;
-    height: 54px;
 }
 
 .sale-img-wrist {
     border: 1px solid rgba(12, 12, 12, 0.05);
     border-radius: 30px;
-    width: 335px;
-    height: 385px;
+    padding: 50px;
     background-color: #f3f3f3;
     margin-bottom: 20px;
 }
@@ -127,6 +127,14 @@
         gap: 10px;
     }
 
+    .sale-item {
+        padding: 16px 18px;
+    }
+    
+    .sale-img-wrist {
+        padding: 80px 112px;
+    }
+
     .container-sale {
         width: 704px;
         height: 518px;
@@ -158,6 +166,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .sale-title-container {
+        flex-wrap: nowrap;
+    }
     .sale-advent-item {
         font-size: 14px;
     }
@@ -173,5 +184,10 @@
 
     .sale-img-wrist {
         margin-right: 40px;
+        padding: 80px 50px;
+    }
+
+    .sale-item {
+        padding: 16px 18px;
     }
 }
