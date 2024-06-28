@@ -66,6 +66,13 @@
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
   align-self: flex-start;
+  transition: background-color, color 300ms cubic-bezier(0.2, 0.3, 0, 0.6);
+}
+
+.advertisement-btn:hover,
+.advertisement-btn:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
 }
 
 @media (min-width: 768px) {
