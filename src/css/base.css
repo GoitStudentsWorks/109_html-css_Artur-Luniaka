@@ -17,6 +17,11 @@ section {
   padding-bottom: 60px;
 }
 
+button:focus,
+a:focus {
+  outline: dotted 2px rgb(115, 115, 115);
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 736px;
