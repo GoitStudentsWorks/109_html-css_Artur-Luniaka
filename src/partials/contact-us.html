@@ -1,0 +1,79 @@
+<section id="contact-us" class="contact-us">
+  <div class="container contact-us-section">
+    <h2 class="contact-us-title">Contact Us</h2>
+    <div class="contact-us-wrap">
+      <div class="contact-us-content">
+        <p class="contact-us-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-us-form">
+          <label class="contact-us-label" name="user-name"
+            ><input
+              type="text"
+              name="user-name"
+              class="contact-us-input"
+              placeholder="Name"
+          /></label>
+          <label class="contact-us-label" name="email"
+            ><input
+              type="email"
+              name="email"
+              class="contact-us-input"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              placeholder="Email"
+          /></label>
+          <label class="contact-us-label" name="phone"
+            ><input
+              type="tel"
+              name="phone"
+              class="contact-us-input"
+              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+              placeholder="+380"
+          /></label>
+          <label class="contact-us-label-area" name="user-comment">
+            <textarea
+              name="user-comment"
+              class="contact-us-textarea"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button type="submit" class="contact-us-btn">Send</button>
+        </form>
+      </div>
+      <div class="contact-us-picture">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              /images/contact_1x-min.jpg 1x,
+              /images/contact_2x-min.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /images/contact-tabl_1x-min.jpg 1x,
+              /images/contact-tabl_2x-min.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /images/contact-mob_1x-min.jpg 1x,
+              /images/contact-mob_2x-min.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            src="/images/contact-mob_1x-min.jpg"
+            alt="Image Of a WristWatch"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
