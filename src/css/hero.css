@@ -1,194 +1,196 @@
 .hero-container {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    background-color: #fbfbfb;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background-color: #fbfbfb;
+  margin: auto;
+  padding-top: 60px;
 }
 
 .hero-title {
-    font-family: "Gilroy" sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    margin-bottom: 20px;
+  font-family: 'Gilroy' sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 20px;
 }
 
 .hero-title span {
-    color: #3350e9;
+  color: #3350e9;
 }
 
 .hero-text {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
-    color: rgba(12, 12, 12, 0.7);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
 }
 
 .hero-btn-box {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    flex-direction: row;
-    /* gap: 155px; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  /* gap: 155px; */
 }
 
 .hero-img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .hero-circles-img {
-    border-radius: 100%;
-    border: 2px solid #fbfbfb;
-    max-width: 44px;
-    max-height: 44px;
-    object-fit: cover;
-    overflow: hidden;
-    box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid #fbfbfb;
+  max-width: 44px;
+  max-height: 44px;
+  object-fit: cover;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .hero-img-wrap {
-    margin-left: -12px;
+  margin-left: -12px;
 }
 
 .hero-img-wrap:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .hero-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
-    transition: color 300ms cubic-bezier(0.2, 0.3, 0, 0.6);
-    text-decoration: none;
-    text-decoration-skip-ink: none;
-    cursor: pointer;
-    position: relative;
-    margin-left: auto;
-    padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  transition: color 300ms cubic-bezier(0.2, 0.3, 0, 0.6);
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: auto;
+  padding-bottom: 4px;
 }
 
 .hero-link:focus,
 .hero-link:hover {
-    color: #3350e9;
+  color: #3350e9;
 }
 
 .hero-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #0c0c0c;
-    transition: background-color 300ms cubic-bezier(0.2, 0.3, 0, 0.6);
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0c0c0c;
+  transition: background-color 300ms cubic-bezier(0.2, 0.3, 0, 0.6);
 }
 
 .hero-link:focus::after,
 .hero-link:hover::after {
-    background-color: #3350e9;
+  background-color: #3350e9;
 }
 
 .hero-content-img {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 768px) {
-    .hero-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 40px 11px;
-    }
+  .hero-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 11px;
+    padding-top: 80px;
+  }
 
-    .hero-text-box {
-        max-width: 557px;
-    }
+  .hero-text-box {
+    max-width: 557px;
+  }
 
-    .hero-title {
-        font-size: 70px;
-        line-height: 0.86;
-    }
+  .hero-title {
+    font-size: 70px;
+    line-height: 0.86;
+  }
 
-    .hero-text {
-        max-width: 480px;
-        font-size: 16px;
-        line-height: 1.25;
-    }
+  .hero-text {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
 
-    .hero-btn-box {
-        flex-direction: column;
-        gap: 180px;
-    }
+  .hero-btn-box {
+    flex-direction: column;
+    gap: 180px;
+  }
 
-    .hero-circles-img {
-        max-width: 56px;
-        max-height: 56px;
-    }
+  .hero-circles-img {
+    max-width: 56px;
+    max-height: 56px;
+  }
 
-    .hero-img-wrap {
-        margin-left: -15px;
-    }
+  .hero-img-wrap {
+    margin-left: -15px;
+  }
 
-    .hero-img-wrap:last-child {
-        margin-left: -17px;
-    }
+  .hero-img-wrap:last-child {
+    margin-left: -17px;
+  }
 
-    .hero-link {
-        font-size: 20px;
-        line-height: 1;
-    }
+  .hero-link {
+    font-size: 20px;
+    line-height: 1;
+  }
 
-    .hero-content-img {
-        border-radius: 50px;
-        max-width: 704px;
-        max-height: 520px;
-    }
+  .hero-content-img {
+    border-radius: 50px;
+    max-width: 704px;
+    max-height: 520px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 40px 407px;
-    }
+  .hero-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 407px;
+  }
 
-    .hero-text-box {
-        max-width: 597px;
-    }
+  .hero-text-box {
+    max-width: 597px;
+  }
 
-    .hero-title {
-        font-size: 72px;
-        line-height: 0.87;
-    }
+  .hero-title {
+    font-size: 72px;
+    line-height: 0.87;
+  }
 
-    .hero-btn-box {
-        gap: 189px;
-    }
+  .hero-btn-box {
+    gap: 189px;
+  }
 
-    .hero-circles-img {
-        max-width: 60px;
-        max-height: 60px;
-    }
+  .hero-circles-img {
+    max-width: 60px;
+    max-height: 60px;
+  }
 
-    .hero-img-wrap {
-        margin-left: -16px;
-    }
+  .hero-img-wrap {
+    margin-left: -16px;
+  }
 
-    .hero-img-wrap:last-child {
-        margin-left: -18px;
-    }
+  .hero-img-wrap:last-child {
+    margin-left: -18px;
+  }
 
-    .hero-content-img {
-        max-width: 1150px;
-        max-height: 500px;
-    }
+  .hero-content-img {
+    max-width: 1150px;
+    max-height: 500px;
+  }
 }
