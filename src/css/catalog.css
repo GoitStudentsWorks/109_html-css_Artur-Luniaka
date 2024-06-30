@@ -52,7 +52,7 @@
   border-radius: 30px;
   background-color: #f3f3f3;
   width: 335px;
-  transition: scale 300ms ease;
+  transition: transform 300ms ease-in-out;
 }
 
 .catalog-item-box:hover {
