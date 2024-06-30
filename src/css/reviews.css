@@ -1,72 +1,77 @@
 .reviews-section-title {
-    margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
 }
 
 .reviews-list {
-    display: flex;
-    gap:8px;
-    max-width: 335px;
-   
+  display: flex;
+  gap: 8px;
+  max-width: 335px;
 }
 
 .reviews-list-item img {
-    display: inline-block;
-    border-radius: 50%;
-    margin-bottom: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 24px;
 }
 .reviews-list-item {
-    text-align: center;
-    align-items: center;
-    background-color: #f3f3f3;
-    border-radius: 30px;
-    padding: 32px 36px;
+  text-align: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 32px 36px;
 }
 
 .reviews-text {
-    font-size: 14px;
-    line-height: 1.28;
-    color: rgba(12, 12, 12, 0.4);
-    letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 1.28;
+  color: rgba(12, 12, 12, 0.4);
+  letter-spacing: -0.02em;
 }
 
-.reviews-list-item:nth-child(n+2) {
-    display: none;
+.reviews-list-item:nth-child(n + 2) {
+  display: none;
 }
 
 .reviews-title {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 768px) {
-    .reviews-list-item:nth-child(2) {
-        display: block;
-    }
+  .reviews-section-title {
+    font-size: 48px;
+    line-height: 0.91;
+  }
 
-    .reviews-list {
-        gap: 16px;
-        max-width: 768px;
-    }
+  .reviews-list-item:nth-child(2) {
+    display: block;
+  }
 
-    .reviews-list-item {
-     flex-basis: calc((100% - 16px) / 2);
-    }
+  .reviews-list {
+    gap: 16px;
+    max-width: 768px;
+  }
 
+  .reviews-list-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .reviews-list {
-        gap: 20px;
-        max-width: 1150px;
-    }
+  .reviews-list {
+    gap: 20px;
+    max-width: 1150px;
+  }
 
-    .reviews-list-item:nth-child(3) {
-        display: block;
-    }
+  .reviews-list-item:nth-child(3) {
+    display: block;
+  }
 
-    .reviews-list-item {
-        flex-basis: calc((100% - 40px) / 3);
-       }
-
-    
-
+  .reviews-list-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
 }
