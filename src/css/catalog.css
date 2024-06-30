@@ -15,7 +15,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
-    margin-bottom: 40px;
 }
 
 .catalog-sign-box {
@@ -85,12 +84,15 @@
 
 .button-show:hover,
 .button-show:focus {
-    background: #404bbf;
+    background: #1f3cd4;;
 }
 
 @media (max-width: 767px) {
     .catalog-item-box.mob-hidden {
         display: none;
+    }
+    .catalog-items-list {
+        margin-bottom: 40px;
     }
 }
 
