@@ -106,13 +106,12 @@
   padding: 8px 12px;
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 8px;
-  transition: scale 300ms ease, background-color 300ms ease, color 300ms ease,
+  transition: transform 300ms ease, background-color 300ms ease, color 300ms ease,
     rotate 300ms ease;
 }
 
 .sale-advent-item:hover {
-  transform: scale(1.1);
-  transform: rotate(356deg);
+  transform: scale(1.05)rotate(-3deg);
   background-color: #fbfbfb;
   color: #3350e9;
 }
