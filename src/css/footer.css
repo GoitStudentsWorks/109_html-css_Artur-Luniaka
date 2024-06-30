@@ -1,12 +1,14 @@
 .footer {
 }
-.container {
+.footer-container {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    margin-bottom: 15px;
+@media (min-width: 1280px) {
+  .footer-container {
+    max-width: 1216px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
