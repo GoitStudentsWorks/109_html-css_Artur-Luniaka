@@ -1,193 +1,197 @@
 .sale-container {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .sale-title {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #0c0c0c;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
 }
 
 .sale-image {
-    display: flex;
-    gap: 5px;
-    margin-top: 24px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 5px;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .sale-item {
-    border-radius: 16px;
-    background-color: #f3f3f3;
-    padding: 13px 14px;
+  border-radius: 16px;
+  background-color: #f3f3f3;
+  padding: 13px 14px;
 }
 
 .sale-img-wrist {
-    border: 1px solid rgba(12, 12, 12, 0.05);
-    border-radius: 30px;
-    padding: 50px;
-    background-color: #f3f3f3;
-    margin-bottom: 20px;
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  padding: 50px;
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
 }
 
 .container-sale {
-    border-radius: 30px;
-    width: 335px;
-    height: 561px;
-    background-color: #3350e9;
+  border-radius: 30px;
+  max-width: 335px;
+  background-color: #3350e9;
 }
 
 .container-sale-objects {
-    padding: 48px 28px;
+  padding: 48px 28px;
 }
 
 .sale-text {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16667;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 10px;
 }
 
 .sale-paragraph {
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    color: rgba(251, 251, 251, 0.5);
-    margin-bottom: 20px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
 }
 
 .sale-price-wrist {
-    display: flex;
-    gap: 9px;
-    align-items: center;
-    margin-bottom: 28px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 28px;
 }
 
 .sale-price {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background-color: rgba(251, 251, 251, 0.1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: rgba(251, 251, 251, 0.1);
 }
 
 .sale-price-discount {
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: -0.02em;
-    text-decoration: line-through;
-    color: rgba(251, 251, 251, 0.5);
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  text-decoration: line-through;
+  color: rgba(251, 251, 251, 0.5);
 }
 
 .sale-information {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    color: rgba(251, 251, 251, 0.7);
-    margin-bottom: 28px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 28px;
 }
 
 .sale-advant {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .sale-advent-item {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.33333;
-    color: #fbfbfb;
-    padding: 8px 12px;
-    border: 1px solid rgba(251, 251, 251, 0.2);
-    border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #fbfbfb;
+  padding: 8px 12px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 8px;
 }
 
 @media (min-width: 768px) {
-    .sale-title {
-        font-size: 48px;
-        margin-bottom: 40px;
-    }
+  .sale-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
 
-    .sale-title-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .sale-title-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 20px) / 2);
+  }
 
-    .sale-image {
-        flex-direction: column;
-        margin-top: 0;
-        margin-right: 20px;
-        gap: 10px;
-    }
+  .sale-image {
+    flex-direction: column;
+    margin-top: 0;
+    margin-right: 20px;
+    gap: 10px;
+    margin-bottom: 0;
+  }
 
-    .sale-item {
-        padding: 16px 18px;
-    }
-    
-    .sale-img-wrist {
-        padding: 80px 112px;
-    }
+  .sale-item {
+    padding: 16px 18px;
+  }
 
-    .container-sale {
-        width: 704px;
-        height: 518px;
-    }
+  .sale-img-wrist {
+    padding: 80px 111px;
+  }
 
-    .container-sale-objects {
-        padding: 60px;
-    }
+  .container-sale {
+    max-width: 704px;
+  }
 
-    .sale-text {
-        font-size: 32px;
-        line-height: 1.125;
-        width: 436px;
-    }
+  .container-sale-objects {
+    padding: 60px;
+  }
 
-    .sale-price {
-        font-size: 20px;
-        line-height: 1;
-    }
+  .sale-text {
+    font-size: 32px;
+    line-height: 1.125;
+    width: 436px;
+  }
 
-    .sale-information {
-        font-size: 16px;
-        line-height: 1.25;
-    }
+  .sale-price {
+    font-size: 20px;
+    line-height: 1;
+  }
 
-    .sale-advant {
-        width: 398px;
-    }
+  .sale-information {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .sale-advant {
+    width: 398px;
+  }
+
+  .sale-container-plus {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .sale-title-container {
-        flex-wrap: nowrap;
-    }
-    .sale-advent-item {
-        font-size: 14px;
-    }
+  .sale-title-container {
+    flex-wrap: nowrap;
+  }
+  .sale-advent-item {
+    font-size: 14px;
+  }
 
-    .container-sale {
-        width: 530px;
-        height: 558px;
-    }
+  .container-sale {
+    max-width: 530px;
+  }
 
-    .sale-text {
-        width: 389px;
-    }
+  .sale-text {
+    width: 389px;
+  }
 
-    .sale-img-wrist {
-        margin-right: 40px;
-        padding: 80px 50px;
-    }
+  .sale-img-wrist {
+    margin-right: 40px;
+    padding: 80px 50px;
+    margin-bottom: 0;
+  }
 
-    .sale-item {
-        padding: 16px 18px;
-    }
+  .sale-item {
+    padding: 16px 18px;
+  }
 }
