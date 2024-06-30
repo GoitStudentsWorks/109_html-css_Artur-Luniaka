@@ -22,6 +22,10 @@ a:focus {
   outline: dotted 2px rgb(115, 115, 115);
 }
 
+address {
+  font-style: normal;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 736px;
