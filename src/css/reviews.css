@@ -4,9 +4,7 @@
 
 .reviews-list {
     display: flex;
-    border-radius: 30px;
-    padding: 32px 36px;
-    background-color: #f3f3f3;
+    gap:8px;
     max-width: 335px;
    
 }
@@ -19,8 +17,9 @@
 .reviews-list-item {
     text-align: center;
     align-items: center;
-   
-
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    padding: 32px 36px;
 }
 
 .reviews-text {
@@ -36,4 +35,38 @@
 
 .reviews-title {
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-list-item:nth-child(2) {
+        display: block;
+    }
+
+    .reviews-list {
+        gap: 16px;
+        max-width: 768px;
+    }
+
+    .reviews-list-item {
+     flex-basis: calc((100% - 16px) / 2);
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .reviews-list {
+        gap: 20px;
+        max-width: 1150px;
+    }
+
+    .reviews-list-item:nth-child(3) {
+        display: block;
+    }
+
+    .reviews-list-item {
+        flex-basis: calc((100% - 40px) / 3);
+       }
+
+    
+
 }
