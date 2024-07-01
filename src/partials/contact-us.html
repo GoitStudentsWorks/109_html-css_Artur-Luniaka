@@ -8,74 +8,38 @@
           phone, and message and we'll get back to you shortly.
         </p>
         <form class="contact-us-form">
-          <label class="contact-us-label"
-            ><input
-              type="text"
-              name="user-name"
-              class="contact-us-input"
-              pattern="[A-Za-zА-Яа-яЁё\s]+"
-              placeholder="Name"
-              required
-          /></label>
-          <label class="contact-us-label"
-            ><input
-              type="email"
-              name="email"
-              class="contact-us-input"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              placeholder="Email"
-              required
-          /></label>
-          <label class="contact-us-label"
-            ><input
-              type="tel"
-              name="phone"
-              class="contact-us-input"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-              placeholder="+380"
-              required
-          /></label>
+          <label class="contact-us-label"><input aria-label="write a username here" type="text" name="user-name"
+              class="contact-us-input" pattern="[A-Za-zА-Яа-яЁё\s]+" placeholder="Name" required /></label>
+          <label class="contact-us-label"><input aria-label="write a email here" type="email" name="email"
+              class="contact-us-input" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Email"
+              required /></label>
+          <label class="contact-us-label"><input aria-label="write a tel number here" type="tel" name="phone"
+              class="contact-us-input" pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$" placeholder="+380"
+              required /></label>
           <label class="contact-us-label-area">
-            <textarea
-              name="user-comment"
-              class="contact-us-textarea"
-              placeholder="Comment"
-            ></textarea>
+            <textarea aria-label="write a your comment here" name="user-comment" class="contact-us-textarea"
+              placeholder="Comment"></textarea>
           </label>
-          <button type="submit" class="contact-us-btn">Send</button>
+          <button type="submit" aria-label="send your information to web" class="contact-us-btn">
+            Send
+          </button>
         </form>
       </div>
       <div class="contact-us-picture">
         <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
+          <source media="(min-width: 1280px)" srcset="
               /images/contact_1x-min.jpg 1x,
               /images/contact_2x-min.jpg 2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
+            " type="image/jpg" />
+          <source media="(min-width: 768px)" srcset="
               /images/contact-tabl_1x-min.jpg 1x,
               /images/contact-tabl_2x-min.jpg 2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
+            " type="image/jpg" />
+          <source media="(max-width: 767px)" srcset="
               /images/contact-mob_1x-min.jpg 1x,
               /images/contact-mob_2x-min.jpg 2x
-            "
-            type="image/jpg"
-          />
-          <img
-            src="/images/contact-mob_1x-min.jpg"
-            alt="Image Of a WristWatch"
-            loading="lazy"
-          />
+            " type="image/jpg" />
+          <img src="/images/contact-mob_1x-min.jpg" alt="Image Of a WristWatch" loading="lazy" />
         </picture>
       </div>
     </div>
