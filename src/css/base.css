@@ -26,6 +26,10 @@ address {
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 736px;
